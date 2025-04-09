@@ -89,7 +89,7 @@ input[type='number'] {
 }
 
 .btn {
-  cursor: pointer;
+  /*cursor: pointer;
   background-color: #9c88ff;
   box-shadow: var(--box-shadow);
   color: #fff;
@@ -98,8 +98,27 @@ input[type='number'] {
   font-size: 16px;
   margin: 10px 0 30px;
   padding: 10px;
-  width: 100%;
-}
+  width: 100%;*/
+  background-color: #9c88ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+
+  /* Add these for effect */
+  transition: all 0.3s ease;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    background-color: #7f73ff;
+  }
 
 .btn:focus,
 .delete-btn:focus {

@@ -10,7 +10,7 @@ export const AddTransaction = () => {
       e.preventDefault();
 
       if (+amount === 0) {
-        alert("Amount cannot be zero");
+        alert("Amount cannot be zero. Please enter a valid number");
         return;
       }
 
