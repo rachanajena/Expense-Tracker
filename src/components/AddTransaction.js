@@ -9,6 +9,11 @@ export const AddTransaction = () => {
     const onSubmit= e => {
       e.preventDefault();
 
+      if (+amount === 0) {
+        alert("Amount cannot be zero");
+        return;
+      }
+
       const newTransaction ={
         id:Math.floor(Math.random() * 100000000),
         text,
@@ -16,6 +21,10 @@ export const AddTransaction = () => {
       }
 
       addTransaction(newTransaction);
+
+      setText('');
+      setAmount('');
+
     }
   return (
     <>
@@ -29,10 +38,13 @@ export const AddTransaction = () => {
         <label htmlFor="amount">Amount <br />
           (negative - expense, positive - income)</label
         >
-        <input type="number" value={amount}onChange={(e)=> setAmount(e.target.value)} placeholder="Enter amount..." min ="1" />
+        <input type="number" value={amount}onChange={(e)=> setAmount(e.target.value)} placeholder="Enter amount..." />
       </div>
       <button className="btn">Add transaction</button>
     </form>
     </>
   )
 }
+
+
+
