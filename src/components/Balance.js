@@ -10,10 +10,15 @@ export const Balance = () => {
 
 
   return (
-    <>
+   /* <>
         <h4>Your Balance</h4>
-        <h1 >Rs {total}</h1>
+        <h1 >₹ {total}</h1>
 
-    </>
+    </>*/
+    <div className="balance-box">
+  <h4>Your Balance</h4>
+  <h1>₹{balance.toFixed(2)}</h1>
+</div>
+
   )
 }
