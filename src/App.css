@@ -161,26 +161,6 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
-/* adding more css*/
-.transaction {
-  background: #fff;
-  padding: 12px 16px;
-  margin: 10px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-left: 5px solid;
-}
-
-.transaction.positive {
-  border-color: #2ecc71;
-}
-
-.transaction.negative {
-  border-color: #e74c3c;
-}
 
 
 
