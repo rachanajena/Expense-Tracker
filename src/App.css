@@ -43,6 +43,12 @@ h1, h3, h4 {
   color: var(--primary-color);
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
